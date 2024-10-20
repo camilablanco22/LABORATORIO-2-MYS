@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .cabecera {
+            background-color: #808d7e;
+            color: rgb(234, 186, 186);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        ul, ol {
+            font-size: 1.1rem;
+            padding-left: 1.5rem;
+        }
+        a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container-fluid {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid text-center rounded cabecera">
+        <header>
+            <h1>MODELOS Y SIMULACIÓN</h1>
+            <h2>LABORATORIO 2</h2>
+        </header>
+    </div>
+    <div class="container-fluid mt-4 mb-4">
+        <p>
+            En los últimos tiempos, la ludopatía ha afectado en gran medida a la sociedad, tanto jóvenes como adultos; 
+            es por esto que el gobierno de la Nación ha decidido realizar una campaña de concientización, modelando el 
+            juego de la ruleta de un casino.
+        </p>
+        <p>
+            En este juego, la ruleta se gira aproximadamente cada cinco minutos.
+        </p>
+        <p>
+            <ul>
+                <li>Al apostar por un número específico, la probabilidad de ganar es de 1 en 37, es decir P(N) = 0.027 = 2.7%.</li>
+                <li>Al apostar por un color, la probabilidad de ganar es de 18 en 37, P(C) = 0.486 = 48.6%.</li>
+                <li>Por último, al apostar por una docena, la probabilidad de ganar es de 12 en 37, P(I) = 0.324 = 32.4%.</li>
+            </ul>
+        </p>
+        <p>
+            El gobierno desea enseñar las siguientes situaciones a los destinatarios de la campaña:
+            <ol>
+                <li>
+                    <a href="#">Si una persona juega siempre al mismo número, ¿cuánto tiempo necesita jugar hasta ganar?</a>
+                </li>
+                <li>
+                    <a href="#">Si una persona juega un monto fijo x, siempre al mismo número, ¿cómo quedará su balance cuando gane?</a>
+                </li>
+                <li>
+                    <a href="#">Si se juega durante una hora, siempre al par/impar, ¿Cuántas veces se ganaría?</a>
+                </li>
+                <li>
+                    <a href="#">Jugando durante 25 tiradas, ¿Cuántas veces saldrá un color?</a>
+                </li>
+            </ol>
+        </p>
+        <img src="portada-ruleta.jpg" alt="Ilustración de paño de ruleta de casino">
+    </div>
+</body>
+</html>
+
