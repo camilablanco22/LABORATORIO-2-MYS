@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 3: Par o Impar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="pregunta3.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .cabecera {
+            background-color: #808d7e;
+            color: rgb(234, 186, 186);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        div.resultado {
+            background-color:  #808d7e;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h3 {
+            color: #16341a;
+            font-size: 1.75rem;
+            font-weight: 600;
+            /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+            font-family: "JetBrains Mono SemiBold";
+            font-style: italic
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .container-fluid {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        #numero_impar{
+            margin: 2.5px 5px 2.5px 1px;
+        }
+        #numero_par{
+            margin: 2.5px 5px 2.5px 1px;
+        }
+        .btn{
+            margin: 10px;
+        }
+        label{
+            margin-top: 2.5px;
+            margin-bottom: 2.5px;
+            margin-left: 5px;
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid text-center rounded cabecera">
+        <header>
+            <h1>MODELOS Y SIMULACIÓN</h1>
+            <h2>PREGUNTA 3</h2>
+            <h3>Si se juega durante una hora, siempre al par/impar, ¿Cuántas veces se ganaría?</h3>
+        </header>
+    </div>
+    <div class="container-fluid mt-4 mb-4">
+        <p>Recuerde que el número cero no se considera ni par ni impar en la ruleta. Por lo tanto, si apuestas 
+            a números pares y sale el cero, pierdes la apuesta.<br>
+            <b>¿Desea apostar por los pares o los impares?</b>
+        </p>
+        <label for="numero_par">Par</label>
+        <input type="radio" name="numero_par_impar" id="numero_par" class="numero_par"><br>
+        <label for="numero_impar">Impar</label>
+        <input type="radio" name="numero_par_impar" id="numero_impar" class="numero_impar"><br>
+        <button type="button" class="btn btn-primary" onclick="simular_juego()">Jugar</button>
+    </div>
+    <div class="container-fluid mt-4 mb4 resultado">
+        <h3>RESULTADO</h3>
+        <p id="resultado"></p>
+    </div>
+
+    
+</body>
+</html>
