@@ -95,8 +95,10 @@ function simular_juego(){
     document.getElementById('resultado').textContent =
             `Ganaste apostando a un número ${tipoNumero} después de aproximadamente ${tiempo_juego.toFixed(2)} minutos, ` 
             +
-            `lo que serían ${(tiempo_juego/60).toFixed(2)} horas, `
+            `lo que serían ${(tiempo_juego/60).toFixed(2)} horas. `
             +
-            `una cantidad de ${Math.round(numeroEsperadoDeVictorias)} veces.`
+            `Ganaste una cantidad de ${Math.round(numeroEsperadoDeVictorias)} veces `
+            +
+            `despues de ${cantidad_jugadas_por_hora} jugadas.`
 }
 
